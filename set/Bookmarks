@@ -1,0 +1,81 @@
+{
+   "checksum": "565029e0cffa86d0cb9f34138925941f",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13293773372832650",
+            "guid": "caa415b6-d1fe-4fb8-8ce3-349eeeff092b",
+            "id": "5",
+            "name": "Google",
+            "show_icon": false,
+            "source": "import_fre",
+            "type": "url",
+            "url": "https://www.google.co.kr/#spf=1579219314947"
+         }, {
+            "date_added": "13293773372832650",
+            "guid": "3ea105b7-d9ac-4358-a4d3-3d3a810caca0",
+            "id": "6",
+            "name": "NAVER",
+            "show_icon": false,
+            "source": "import_fre",
+            "type": "url",
+            "url": "https://www.naver.com/"
+         }, {
+            "date_added": "13293773372832650",
+            "guid": "ee3ae509-716d-4a5d-9593-4cfea3702f80",
+            "id": "7",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "import_fre",
+            "type": "url",
+            "url": "https://www.youtube.com/?gl=KR&hl=ko"
+         }, {
+            "date_added": "13293773372848298",
+            "guid": "45b05a67-9df7-42dc-9d0c-8f42dea6e6da",
+            "id": "8",
+            "name": "간편한 원격지원 - 헬프유",
+            "show_icon": false,
+            "source": "import_fre",
+            "type": "url",
+            "url": "http://15663669.co.kr/start/"
+         }, {
+            "date_added": "13293773372848298",
+            "guid": "7d3a5195-bbd0-4422-b841-cb36cb510383",
+            "id": "9",
+            "name": "위더스컴퓨터",
+            "show_icon": false,
+            "source": "import_fre",
+            "type": "url",
+            "url": "http://withuspc.com/main/"
+         } ],
+         "date_added": "13293780679433053",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "즐겨찾기 모음",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13293780679433057",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "다른 즐겨찾기",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13293780679433061",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "모바일 즐겨찾기",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

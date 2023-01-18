@@ -1,0 +1,37 @@
+@echo off 
+@chcp 65001 1>NUL 2>NUL 
+title 위더스 마스터 세팅
+mode con cols=80 lines=20 
+color 0F 
+
+echo 위더스컴퓨터 설정하기
+
+echo 위더스컴퓨터 마스터 적용 y/n ? 
+echo.
+set /p bool=마스터를 적용할거면 y 종료할거면 n를 입력해주세요.
+
+if "%bool%"=="y" goto RUN
+if "%bool%"=="n" goto EXIT
+
+:RUN
+
+regedit.exe /s "%~dp0\oem Withus.reg"
+copy "%~dp0\OEMLOGO.bmp" "c:\windows\system32\oobe" /y
+copy "%~dp0\withusbackground1.jpg" "c:\" /y
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  wallpaper_path /f 
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d c:\withusbackground1.jpg /f  
+RUNDLL32.EXE user32.dll, UpdatePerUserSystemParameters ,1 ,True
+
+copy "%~dp0\Google.url" "C:\Users\user\Favorites\Links"
+copy "%~dp0\NAVER.url" "C:\Users\user\Favorites\Links"
+copy "%~dp0\YouTube.url" "C:\Users\user\Favorites\Links"
+copy "%~dp0\간편한 원격지원 - 헬프유.url" "C:\Users\user\Favorites\Links"
+copy "%~dp0\위더스컴퓨터.url" "C:\Users\user\Favorites\Links"
+reg add "HKCU\Software\Microsoft\Internet Explorer\MINIE" /v AlwaysShowMenus /t REG_DWORD /d 1 /f   
+reg add "HKCU\Software\Microsoft\Internet Explorer\MINIE" /v LinksBandEnabled /t REG_DWORD /d 1 /f   
+reg add "HKCU\Software\Microsoft\Internet Explorer\MINIE" /v CommandBarEnabled /t REG_DWORD /d 1 /f   
+reg add "HKCU\Software\Microsoft\Internet Explorer\MINIE" /v ShowStatusBar /t REG_DWORD /d 1 /f  
+
+
+:EXIT 
+exit 

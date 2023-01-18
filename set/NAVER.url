@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=https://www.naver.com/
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,11
+[InternetShortcut]
+IDList=
+URL=https://www.naver.com/
+IconFile=https://www.naver.com/favicon.ico?1
+IconIndex=1
